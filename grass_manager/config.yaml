@@ -1,6 +1,6 @@
 name: "Irrigation Manager Multi-Impianto"
 description: "Portale multiutente e multi-impianto basato sulle entità di Home Assistant"
-version: "0.4.0"
+version: "0.4.1"
 slug: "grass_manager"
 url: "https://github.com/emaiod/grass-manager"
 init: false
