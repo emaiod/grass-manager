@@ -1,0 +1,7 @@
+configuration:
+  bootstrap_admin_username:
+    name: Utente amministratore iniziale
+  bootstrap_admin_password:
+    name: Password amministratore iniziale
+network:
+  8099/tcp: Portale esterno multiutente
