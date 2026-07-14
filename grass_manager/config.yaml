@@ -1,14 +1,12 @@
 name: "Irrigation Manager Multi-Impianto"
 description: "Portale multiutente e multi-impianto basato sulle entità di Home Assistant"
-version: "0.3.0"
+version: "0.4.0"
 slug: "grass_manager"
-url: "https://github.com/emaiod/ha-grass-manager"
+url: "https://github.com/emaiod/grass-manager"
 init: false
 startup: application
 boot: auto
-ingress: true
-ingress_port: 8099
-ingress_stream: false
+ingress: false
 panel_icon: "mdi:sprinkler-variant"
 panel_title: "Grass Manager"
 homeassistant_api: true
@@ -16,13 +14,15 @@ arch:
   - aarch64
   - amd64
 ports:
-  8099/tcp: 8099
+  8100/tcp: 8100
 ports_description:
-  8099/tcp: "Portale esterno multiutente (proteggere con HTTPS/reverse proxy)"
-webui: "http://[HOST]:[PORT:8099]"
+  8100/tcp: "Portale unico multiutente con credenziali Grass Manager (proteggere con HTTPS/reverse proxy)"
+webui: "http://[HOST]:[PORT:8100]"
 options:
   bootstrap_admin_username: "admin"
   bootstrap_admin_password: "change-me-now"
+  suspend_automation_on_expiry: true
 schema:
   bootstrap_admin_username: str
   bootstrap_admin_password: password
+  suspend_automation_on_expiry: bool
