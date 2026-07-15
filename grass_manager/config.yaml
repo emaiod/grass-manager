@@ -1,6 +1,6 @@
 name: "Grass Manager Multi-Impianto"
-description: "Portale multiutente e multi-impianto con gestione responsive di zone e programmi"
-version: "1.1.1"
+description: "Portale multiutente con creazione zone riservata agli amministratori"
+version: "1.1.2"
 slug: "grass_manager"
 url: "https://github.com/emaiod/grass-manager"
 init: false
